@@ -13,7 +13,7 @@ However, you can modify the script to work with other types of login panels, dep
 data = urllib.parse.urlencode({'username': u, 'password': p}).encode()
 req = urllib.request.Request(login_url, data=data)
 ```
-* Modification:
+### Modification:
 
 ```
 def attempt_login(self, username, password):
@@ -39,7 +39,7 @@ def attempt_login(self, username, password):
         attempt += 1
 ```
 
-* You can see the help menu by running:
+### You can see the help menu by running:
 
 ```
 python bruteforce.py
