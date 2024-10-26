@@ -1,4 +1,4 @@
-#HTTP Basic Authentication login panels
+###HTTP Basic Authentication login panels
 
 
 This brute forcing script is made to target HTTP Basic Authentication login panels, 
@@ -8,9 +8,10 @@ depending on the authentication mechanism they use.
 
 Example:
 
-#Form-Based Authentication
+###Form-Based Authentication
 
 """
 data = urllib.parse.urlencode({'username': u, 'password': p}).encode()
+
 req = urllib.request.Request(login_url, data=data)
 """
