@@ -1,4 +1,4 @@
-### HTTP Basic Authentication login panels
+### About 
 
 
 This brute forcing script is made to target HTTP Basic Authentication login panels, 
