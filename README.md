@@ -12,6 +12,5 @@ Example:
 
 '''
 data = urllib.parse.urlencode({'username': u, 'password': p}).encode()
-
 req = urllib.request.Request(login_url, data=data)
 '''
