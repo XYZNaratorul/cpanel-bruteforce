@@ -7,7 +7,7 @@ However, you can modify the script to work with other types of login panels, dep
 
 ### Example:
 
-### Form-Based Authentication
+* Form-Based Authentication
 
 ```
 data = urllib.parse.urlencode({'username': u, 'password': p}).encode()
