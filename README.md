@@ -6,7 +6,7 @@ which respond with a 401 Unauthorized error when incorrect credentials are suppl
 However, you can modify the script to work with other types of login panels, 
 depending on the authentication mechanism they use. 
 
-Example:
+* Example:
 
 ### Form-Based Authentication
 
